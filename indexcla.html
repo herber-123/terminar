@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>MI PAGINA FINAL</title>
+<link rel="stylesheet" type="text/css" href="final.css">
+<script>
+function comprobarClave(){
+    clave1 = document.f1.clave1.value
+    clave2 = document.f1.clave2.value
+
+   if(clave1=="Herber"&&clave2=="Parada"){
+    alert ("FELICIDADES HAS ENTRADO... \nBienbenido.");
+    var href ="index1.html";
+    window.location=href;
+   }
+else {
+  alert("LA CONTRASEÑA NO COICIDE...\nINTETALO DE NUEVO ");
+  var href =  "contraseña.html";
+  window.location=href;
+}
+
+    }
+   
+
+
+
+</script>
+
+</head>
+
+<body>
+
+<h1>TIENES QUE COLOCAR DOS VECES LA MISMA CONTRASEÑA PARA VALIDAR TU CONTRASEÑA</h1>
+<br>
+<h2>ESCRIBE LA CONTRASEÑA CORRECTA SI TE EQUIVOCAS TE AVISARE.</h2>
+<BR>
+<h2>contraseña 1: Herber<br>
+contraseña 2: Parada</h2>
+
+
+<form action="" name="f1">
+       <h3>Contraseña:</h3> <input type="password" name="clave1" size="20">
+
+<h3>Repite contraseña:</h3> <input type="password" name="clave2" size="20">
+
+<br>
+<input type="button" value="ENTRADA DE COMPROBACION" onClick="comprobarClave()">
+
+
+</form>
+
+</body>
+</html>
